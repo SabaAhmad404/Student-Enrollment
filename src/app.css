@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex: 1; 
+}
+.main-content{
+  width: 100%;
+  max-width: 1200px;
+}
