@@ -35,7 +35,7 @@ Features a user-friendly interface for selecting students, verifying details, an
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
--  [Live Link](https://space-travelers-hub-z8qg.onrender.com)
+-  [Live Link](https://student-enrollmentapp-dwqm.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
