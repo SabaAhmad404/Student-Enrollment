@@ -1,0 +1,271 @@
+.schedule-container {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.instructor-image {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 10px 10px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* .instructor-card {
+    padding: 16px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+
+/* .instructor-green {
+    background-color: #d1fae5;
+  }
+  
+  .instructor-gray {
+    background-color: #e5e7eb;
+  }
+  
+  .instructor-red {
+    background-color: #fecaca;
+  } */
+
+.buttons-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-class {
+  margin-left: auto;
+}
+
+.schedule-list,
+.created-classes {
+  margin-bottom: 20px;
+}
+
+.class-card {
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  margin-bottom: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-content h3 {
+  color: purple;
+  margin-bottom: 10px;
+}
+
+.instructor-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.day-time label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.day-time select,
+.day-time input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.modal-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background-color: #eee;
+}
+
+.modal-buttons button:last-child {
+  background-color: purple;
+  color: white;
+}
+
+.instructors-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
+.instructor-card-wrapper {
+  display: flex;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.instructor-card-wrapper.selected {
+  border-color: #8a2be2;
+  background-color: #f7f2ff;
+  border: 2px solid #8a2be2;
+}
+
+.instructor-info {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.instructor-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px 4px;
+  margin-bottom: 8px;
+}
+
+.instructor-hours-box {
+  background-color: #f5f5f5;
+  /* border: 2px solid #8a2be2; */
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  margin-top: 10px;
+  width: 6rem;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.7rem;
+}
+
+.instructor-controls .button-icon {
+  background: #48bb3d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.button-icon {
+  height: 19px;
+  width: 19px;
+}
+.instru-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: small;
+}
+.create-schedule-btn {
+  color: white;
+  height: 2.3rem;
+  width: 9rem;
+  background-color: #d9bcf5;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 6px 6px;
+}
+.create-schedule-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-class-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.add-class {
+  height: 2rem;
+  width: 8rem;
+  color: white;
+  background-color: #debcff;
+  border: none;
+  border-radius: 6px 6px;
+}
+ul {
+  list-style-type: none;
+}
+.days-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.classes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.classes-table th,
+.classes-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.classes-table th {
+  background-color: #f4f4f4;
+}
