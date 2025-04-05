@@ -19,11 +19,11 @@
 
 .sidebar-container {
   display: flex;
-  height: 100%;
   font-family: Arial, sans-serif;
 }
 
 .sidebar {
+  height: 100%;
   width: 250px;
   background: linear-gradient(to bottom, #7d51c1, #b980ff);
   color: white;
@@ -94,7 +94,7 @@
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  background: linear-gradient(to right, #e2dfdf 30%, #d1c5e0 );
+  background: linear-gradient(to right, #e2dfdf 30%, #d1c5e0);
 
   border-radius: 2%;
   height: 75%;
@@ -104,9 +104,8 @@
   align-items: center;
   justify-content: center;
   gap: 10rem;
-  
 }
-.sec-1{
+.sec-1 {
   margin-top: 2rem;
 }
 .labels {
@@ -127,7 +126,6 @@
   border-radius: 10%;
   object-fit: cover;
 }
-
 
 /* buttons */
 
@@ -165,19 +163,19 @@
   border: none;
   padding: 6px;
   font-size: 1rem;
-  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1); /* Bottom shadow */
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
 }
 
 .labels input:focus {
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on focus */
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
 }
-.next{
+.next {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
 }
-.next-btn{
+.next-btn {
   height: 2rem;
   width: 7rem;
   background-color: blue;
@@ -186,4 +184,20 @@
   border-radius: 4px 4px;
 }
 
+.schedule-instructor {
+  background-color: white;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 6px 6px;
+  border: 2px black;
+}
 
+.sidebar ul li.active {
+  background: linear-gradient(to right, #efc3fa 30%, #b67efa);
+  color: rgb(5, 5, 5);
+}
+
+.sidebar ul li.active-icon {
+  color: rgb(14, 98, 167);
+}

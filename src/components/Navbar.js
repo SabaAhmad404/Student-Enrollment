@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import student from "./imgs/student.png";
+import student from "../imgs/student.png";
+import Schedule from "./schedule/Schedule";
 
 export default function Navbar() {
   const [currentPage, setCurrentPage] = useState("client");
@@ -18,13 +19,12 @@ export default function Navbar() {
   };
 
   const handleNextClick = () => {
-    // Check if all fields are filled
     const isFormComplete = Object.values(clientInfo).every(
       (val) => val.trim() !== ""
     );
 
     if (isFormComplete) {
-      setCurrentPage("schedule"); // Move to schedule page
+      setCurrentPage("schedule"); 
     } else {
       alert("Please fill out all the client information!");
     }
@@ -151,7 +151,7 @@ export default function Navbar() {
 
       {currentPage === "schedule" && (
         <div className="schedule-instructor">
-          <h2>Schedule Instructor</h2>
+          <Schedule />
         </div>
       )}
     </>

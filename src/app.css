@@ -1,6 +1,8 @@
 .App {
   display: flex;
+  width: 100%;
   flex-direction: column;
+  background-color: rgba(231, 230, 230, 0.534);
 }
 .container {
   display: flex;

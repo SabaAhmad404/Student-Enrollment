@@ -1,6 +1,6 @@
 import react from "react";
 import "remixicon/fonts/remixicon.css";
-import staff from "./imgs/staff.png";
+import staff from "../imgs/staff.png";
 import "./style.css";
 
 export default function Header() {
